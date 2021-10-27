@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Ciclo 3</title>
+    <script src="assets/js/misFunciones.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>  
+    <title>Ciclo 3</title>
+    <!--Estilo de la Tabla-->
+    <style>
+        table, th, td {
+        border: 1px solid rgba(0, 49, 245, 0.481);
+        border-collapse: separate;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container mt-5">
+    <div class="jumbotron mt-3">
+    <h1 class="text-md-center"> Ciclo 3</h1>
+    <h1> Categorias</h1>
+    <div id="resultado1" class="form-group container text-center"></div>
+    
+    <div>
+        <input class="form-control mb-3" type="text" id="Cname" placeholder="name">
+        <input class="form-control mb-3" type="text" id="Cdescription" placeholder="description">        
+    </div>
+    <button class="btn btn-primary mb-3" onclick="traerInformacionCategorias()">Consultar Categorias</button>
+    <button class="btn btn-primary mb-3" onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+
+
+
+    <h1> Auditorios</h1>
+    <div id="resultado2" class="form-group container text-center"></div>
+    
+    <div>
+        <input class="form-control mb-3" type="text" id="Aowner" placeholder="owner">
+        <input class="form-control mb-3" type="number" id="Acapacity" placeholder="capacity">
+        <input class="form-control mb-3" type="text" id="Aname" placeholder="name">
+        <input class="form-control mb-3" type="text" id="Adescription" placeholder="description">         
+       
+    </div>
+    <button class="btn btn-primary mb-3" onclick="traerInformacionAuditorios()" > Consultar Auditorios</button>
+    <button class="btn btn-primary mb-3" onclick="guardarInformacionAuditorios()">Guardar Auditorios</button>
+
+
+    <h1> Clientes</h1>
+    <div id="resultado3" class="form-group container text-center"></div>
+    
+    <div>
+        <input class="form-control mb-3" type="text" id="CLemail" placeholder="email">
+        <input class="form-control mb-3" type="text" id="CLpassword" placeholder="password">
+        <input class="form-control mb-3" type="text" id="CLname" placeholder="name"> 
+        <input class="form-control mb-3" type="number" id="CLage" placeholder="age">             
+    </div>
+    <button class="btn btn-primary mb-3" onclick="traerInformacionClientes()" > Consultar Clientes</button>
+    <button class="btn btn-primary mb-3" onclick="guardarInformacionClientes()">Guardar Clientes</button>
+
+
+
+    <h1> Mensajes</h1>
+    <div id="resultado4" class="form-group container text-center"></div>
+    
+    <div>
+        <input class="form-control mb-3" type="text" id="MmessageText" placeholder="messageText">           
+    </div>
+    <button class="btn btn-primary mb-3" onclick="traerInformacionMensajes()" > Consultar Mensajes</button>
+    <button class="btn btn-primary mb-3" onclick="guardarInformacionMensajes()">Guardar Mensajes</button>
+
+
+
+    <h1> Reservaciones</h1>
+    <div id="resultado5" class="form-group container text-center"></div>
+    
+    <div>
+        <input class="form-control mb-3" type="datetime-local" id="RstartDate" placeholder="startDate">
+        <input class="form-control mb-3" type="datetime-local" id="RdevolutionDate" placeholder="devolutionDate">           
+    </div>
+    <button class="btn btn-primary mb-3" onclick="traerInformacionReservaciones()" > Consultar Reservaciones</button>
+    <button class="btn btn-primary mb-3" onclick="guardarInformacionReservaciones()">Guardar Reservaciones</button>
+</div>
+</div>
+</body>
+</html>
